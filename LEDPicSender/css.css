@@ -1,0 +1,22 @@
+a{
+  text-decoration: none !important;
+}
+*{
+font-family: 'Share Tech', sans-serif;
+margin: auto;
+text-align: center;
+background-color: black;
+color: #FFDC03;
+font-weight: bold;
+}
+button
+{
+  background-color: #3300FF;
+  color: #31B94D;
+}
+
+button:hover
+{
+  background-color: #31B94D;
+  color: #3300FF;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>IoT LED Control website</title>
+<script src="js.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="/css.css"/>
+<link rel="icon" type="favicon/ico" href="http://ledshoppe.com/image/cache/data/PICT0159-480x360.JPG"/>
+</head>
+<body>
+<h1>Send Email of LED</h1>
+<br>
+<p id="status"></p>
+<p>Enter the email here that you want the picture to be sent to</p>
+<br>
+<input type="text" id="email">
+<br><br>
+<button onclick="sendPic()">Send picture of LED</button>
+<br><br>
+<button onclick='javascript:changeLEDStatus("turnon")'>Turn LED on</button>
+<button onclick='javascript:changeLEDStatus("turnoff")'>Turn LED off</button>
+<button onclick='javascript:changeLEDStatus("check")'>Check the LED</button>
+<button onclick='javascript:changeLEDStatus("toggle")'>Toggle the LED</button>
+</body>
+</html>
