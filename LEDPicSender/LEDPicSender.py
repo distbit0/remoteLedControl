@@ -5,7 +5,7 @@ from email.mime.multipart import MIMEMultipart
 import cv2
 
 picName = "LEDPic.jpg"
-fromEmail = "snazzyemailsender@gmail.com"
+fromEmail = "a@b.c"
 
 import tornado.ioloop
 import tornado.web
@@ -48,7 +48,7 @@ class LEDPicSender(tornado.web.RequestHandler):
             msg.attach(image)
             try:
                 emailObject = smtplib.SMTP_SSL("smtp.gmail.com", 465)
-                emailObject.login(fromEmail, "wsxcdeWSXCDE99!")
+                emailObject.login(fromEmail, "pswd")
                 emailObject.sendmail(fromEmail, toEmail, msg.as_string())
                 emailObject.quit()
             except:
